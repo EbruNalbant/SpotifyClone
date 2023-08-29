@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!--Bootstrap link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!--Side part-->
+    <aside>
+      <img src="images/spotify.png" />
+      <nav>
+        <a href="">
+          <i class="bi bi-house-fill"></i>
+          <span>Home</span>
+        </a>
+        <a href="">
+          <i class="bi bi-search"></i>
+          <span>Search</span></a
+        >
+        <a href="">
+          <i class="bi bi-bookmarks-fill"></i>
+          <span>Your Library</span>
+        </a>
+        <a href="">
+          <i class="bi bi-music-note-list"></i>
+          <span>Create Playlist</span>
+        </a>
+        <a href="">
+          <i class="bi bi-heart-fill"></i>
+          <span>Liked Songs</span>
+        </a>
+      </nav>
+    </aside>
+    <main>
+      <header>
+        <!--Search part-->
+        <form>
+          <input type="text" placeholder="Artists, songs or podcasts" />
+          <button>Search</button>
+        </form>
+        <ul>
+          <li>Premium</li>
+          <li>Support</li>
+          <li>Download</li>
+          <li>Sign Up</li>
+        </ul>
+      </header>
+      <div class="songs">
+        <h2>Spotify Playlist</h2>
+        <!--Songs part-->
+        <div class="list"></div>
+      </div>
+    </main>
+    <!--Playing part-->
+    <div class="playing">
+      <div class="info"></div>
+      <audio controls>
+        <source src="" />
+      </audio>
+    </div>
+    <!--Script link-->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
